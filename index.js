@@ -6,6 +6,7 @@ import physicalVerbForAbstract from "./lib/rules/physical-verb-for-abstract.js";
 import nominalizedKango from "./lib/rules/nominalized-kango.js";
 import personWordForCode from "./lib/rules/person-word-for-code.js";
 import unspecifiedBehavior from "./lib/rules/unspecified-behavior.js";
+import vagueEvaluativeEnding from "./lib/rules/vague-evaluative-ending.js";
 
 export default {
   rules: {
@@ -17,6 +18,7 @@ export default {
     "nominalized-kango": nominalizedKango,
     "person-word-for-code": personWordForCode,
     "unspecified-behavior": unspecifiedBehavior,
+    "vague-evaluative-ending": vagueEvaluativeEnding,
   },
   rulesConfig: {
     "literal-verb-translation": true,
@@ -27,5 +29,6 @@ export default {
     "nominalized-kango": true,
     "person-word-for-code": true,
     "unspecified-behavior": true,
+    "vague-evaluative-ending": true,
   },
 };
