@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "test": "node --test test/*.test.js",
-    "evaluate": "node evaluate.js"
+    "evaluate": "node scripts/evaluate.js"
   },
   "devDependencies": {
     "@textlint/kernel": "^15.8.0",
