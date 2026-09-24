@@ -4,6 +4,7 @@ import calquedMetaphor from "./lib/rules/calqued-metaphor.js";
 import foreignFieldTerm from "./lib/rules/foreign-field-term.js";
 import physicalVerbForAbstract from "./lib/rules/physical-verb-for-abstract.js";
 import nominalizedKango from "./lib/rules/nominalized-kango.js";
+import personWordForCode from "./lib/rules/person-word-for-code.js";
 import unspecifiedBehavior from "./lib/rules/unspecified-behavior.js";
 
 export default {
@@ -14,6 +15,7 @@ export default {
     "foreign-field-term": foreignFieldTerm,
     "physical-verb-for-abstract": physicalVerbForAbstract,
     "nominalized-kango": nominalizedKango,
+    "person-word-for-code": personWordForCode,
     "unspecified-behavior": unspecifiedBehavior,
   },
   rulesConfig: {
@@ -23,6 +25,7 @@ export default {
     "foreign-field-term": true,
     "physical-verb-for-abstract": true,
     "nominalized-kango": true,
+    "person-word-for-code": true,
     "unspecified-behavior": true,
   },
 };
