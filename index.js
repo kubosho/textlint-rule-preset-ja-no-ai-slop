@@ -2,6 +2,7 @@ import literalVerbTranslation from "./lib/rules/literal-verb-translation.js";
 import requestInCondition from "./lib/rules/request-in-condition.js";
 import calquedMetaphor from "./lib/rules/calqued-metaphor.js";
 import foreignFieldTerm from "./lib/rules/foreign-field-term.js";
+import physicalVerbForAbstract from "./lib/rules/physical-verb-for-abstract.js";
 import unspecifiedBehavior from "./lib/rules/unspecified-behavior.js";
 
 export default {
@@ -10,6 +11,7 @@ export default {
     "request-in-condition": requestInCondition,
     "calqued-metaphor": calquedMetaphor,
     "foreign-field-term": foreignFieldTerm,
+    "physical-verb-for-abstract": physicalVerbForAbstract,
     "unspecified-behavior": unspecifiedBehavior,
   },
   rulesConfig: {
@@ -17,6 +19,7 @@ export default {
     "request-in-condition": true,
     "calqued-metaphor": true,
     "foreign-field-term": true,
+    "physical-verb-for-abstract": true,
     "unspecified-behavior": true,
   },
 };
