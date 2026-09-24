@@ -7,6 +7,7 @@ import nominalizedKango from "./lib/rules/nominalized-kango.js";
 import personWordForCode from "./lib/rules/person-word-for-code.js";
 import unspecifiedBehavior from "./lib/rules/unspecified-behavior.js";
 import vagueEvaluativeEnding from "./lib/rules/vague-evaluative-ending.js";
+import sentenceConnection from "./lib/rules/sentence-connection.js";
 
 export default {
   rules: {
@@ -19,6 +20,7 @@ export default {
     "person-word-for-code": personWordForCode,
     "unspecified-behavior": unspecifiedBehavior,
     "vague-evaluative-ending": vagueEvaluativeEnding,
+    "sentence-connection": sentenceConnection,
   },
   rulesConfig: {
     "literal-verb-translation": true,
@@ -30,5 +32,6 @@ export default {
     "person-word-for-code": true,
     "unspecified-behavior": true,
     "vague-evaluative-ending": true,
+    "sentence-connection": true,
   },
 };
