@@ -1,0 +1,65 @@
+[
+  {
+    "id": "sentence-connection/problem-dakara",
+    "text": "先行者有利の構造。だから今やる。",
+    "expected": [
+      {
+        "ruleId": "sentence-connection",
+        "match": "だから"
+      }
+    ]
+  },
+  {
+    "id": "sentence-connection/problem-dash",
+    "text": "技術資産 ── すでに社内で運用している基盤",
+    "expected": [
+      {
+        "ruleId": "sentence-connection",
+        "match": "──"
+      }
+    ]
+  },
+  {
+    "id": "sentence-connection/problem-list-items",
+    "text": "- 先行者有利の構造\n- だから今やる\n1. だから今やる",
+    "expected": [
+      {
+        "ruleId": "sentence-connection",
+        "match": "だから"
+      },
+      {
+        "ruleId": "sentence-connection",
+        "match": "だから"
+      }
+    ]
+  },
+  {
+    "id": "sentence-connection/problem-dash-variants",
+    "text": "技術資産 — すでにあるもの\n技術資産 ― すでにあるもの",
+    "expected": [
+      {
+        "ruleId": "sentence-connection",
+        "match": "—"
+      },
+      {
+        "ruleId": "sentence-connection",
+        "match": "―"
+      }
+    ]
+  },
+  {
+    "id": "sentence-connection/normal-mid-sentence",
+    "text": "期限が近いのだから今やる。",
+    "expected": []
+  },
+  {
+    "id": "sentence-connection/normal-dakara-toitte",
+    "text": "だからといって急ぐ必要はない。",
+    "expected": []
+  },
+  {
+    "id": "sentence-connection/normal",
+    "text": "今から着手することで先行者有利を獲得",
+    "expected": []
+  }
+]

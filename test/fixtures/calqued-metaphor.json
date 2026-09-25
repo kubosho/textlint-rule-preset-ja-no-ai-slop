@@ -1,0 +1,95 @@
+[
+  {
+    "id": "calqued-metaphor/problem",
+    "text": "4エージェントに同じ骨格で書き直させます。",
+    "expected": [
+      {
+        "ruleId": "calqued-metaphor",
+        "match": "骨格"
+      }
+    ]
+  },
+  {
+    "id": "calqued-metaphor/normal",
+    "text": "4エージェントに同じ構成で書き直させます。",
+    "expected": []
+  },
+  {
+    "id": "calqued-metaphor/normal-technical-term",
+    "text": "カメラ映像から骨格推定を行う。",
+    "expected": []
+  },
+  {
+    "id": "calqued-metaphor/normal-anatomy-terms",
+    "text": "骨格筋の図を描く。\n骨格標本を展示する。\n画像から骨格検出を行う。",
+    "expected": []
+  },
+  {
+    "id": "calqued-metaphor/problem-scaffold",
+    "text": "このコードを足場にして画面を作る。",
+    "expected": [
+      {
+        "ruleId": "calqued-metaphor",
+        "match": "足場"
+      }
+    ]
+  },
+  {
+    "id": "calqued-metaphor/normal-scaffold",
+    "text": "外壁工事の足場を設置する。\n思考の足場として下書きを使う。\n工事の足場代を支払う。",
+    "expected": [
+      {
+        "ruleId": "calqued-metaphor",
+        "match": "足場"
+      }
+    ]
+  },
+  {
+    "id": "calqued-metaphor/problem-frame",
+    "text": "同じ骨組みで四つの仕様を書く。",
+    "expected": [
+      {
+        "ruleId": "calqued-metaphor",
+        "match": "骨組み"
+      }
+    ]
+  },
+  {
+    "id": "calqued-metaphor/normal-frame",
+    "text": "HTMLとbodyの骨組みを共通のLayoutで定義する。",
+    "expected": []
+  },
+  {
+    "id": "calqued-metaphor/problem-foundation",
+    "text": "このファイルを土台にして機能を追加する。",
+    "expected": [
+      {
+        "ruleId": "calqued-metaphor",
+        "match": "土台"
+      }
+    ]
+  },
+  {
+    "id": "calqued-metaphor/normal-foundation",
+    "text": "ピラミッドの土台を測る。\n建物の土台を施工する。",
+    "expected": []
+  },
+  {
+    "id": "calqued-metaphor/mixed-literal-and-metaphor",
+    "text": "工事の足場を確認し、コードの足場を作る。\nHTMLとbodyの骨組みを説明し、設計の骨組みを書く。\nピラミッドの土台を測り、このファイルを土台に使う。",
+    "expected": [
+      {
+        "ruleId": "calqued-metaphor",
+        "match": "足場"
+      },
+      {
+        "ruleId": "calqued-metaphor",
+        "match": "骨組み"
+      },
+      {
+        "ruleId": "calqued-metaphor",
+        "match": "土台"
+      }
+    ]
+  }
+]

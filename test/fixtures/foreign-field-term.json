@@ -1,0 +1,217 @@
+[
+  {
+    "id": "foreign-field-term/problem-authoritative-copy",
+    "text": "この README を正本として扱う。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "正本"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/problem-overload",
+    "text": "基準の1項目としては過積載だった。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "過積載"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/problem-overreach",
+    "text": "このskillがレビューまで行うのは越権だ。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "越権"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/normal",
+    "text": "1項目に規則以外の要素まで入れていた。",
+    "expected": []
+  },
+  {
+    "id": "foreign-field-term/problem-constitution",
+    "text": "この規則を憲法として扱う。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "憲法"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/problem-undecided",
+    "text": "公開の条件は未決だ。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "未決"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/problem-proclamation",
+    "text": "新しい運用方針を布告した。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "布告"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/problem-turn-back-noun",
+    "text": "質問への追い返しを追加した。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "追い返し"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/problem-turn-back-verbs",
+    "text": "質問を追い返す。\n質問を追い返した。\n質問を追い返してしまう。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "追い返す"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "追い返した"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "追い返して"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/problem-original-domain",
+    "text": "運送会社は過積載を報告した。\n行政機関の越権を記録した。\n契約書の正本を保管した。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "過積載"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "越権"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "正本"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/normal-undecided-compounds",
+    "text": "まだ未決定です。\n代金は未決済です。\n交渉は未決着です。\n金額は未決算です。\n申請は未決裁です。",
+    "expected": []
+  },
+  {
+    "id": "foreign-field-term/normal-other-field-terms",
+    "text": "管轄と決裁を確認した。\n決議と聖域を記録した。\n肩代わりの理由と原典を調べた。\n担保と権限を確認した。\n監査と契約と診断を続けた。\n技術負債と規制違反を調べた。",
+    "expected": []
+  },
+  {
+    "id": "foreign-field-term/problem-turn-back-more-forms",
+    "text": "質問を追い返さない。\n質問を追い返せばよい。\n質問を追い返そう。\n質問を追い返される。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "追い返さない"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "追い返せば"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "追い返そう"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "追い返される"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/independent-nouns",
+    "text": "語を選ぶ。\n硬い語を避ける。\n分野の語を調べる。\n表す語がある。\n同じ語を使う。\n副作用：語の所在を示す。\n😀語を選ぶ。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/compounds-with-standalone-sense",
+    "text": "語自体を確認する。\n語単位で数える。\n語同士を比べる。",
+    "expected": [
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      },
+      {
+        "ruleId": "foreign-field-term",
+        "match": "語"
+      }
+    ]
+  },
+  {
+    "id": "foreign-field-term/compound-preceding-characters",
+    "text": "用語を確認する。\n日本語を読む。\n物語を書く。\nドイツ語を学ぶ。\n1語を数える。\n一語を数える。\n用語自体、日本語同士、単語単位を比べる。\nＡ語とA語、ａ語と９語、カ語とー語、々語と𠮟語を確認する。",
+    "expected": []
+  },
+  {
+    "id": "foreign-field-term/compound-following-characters",
+    "text": "語句を確認する。\n語尾を直す。\n語弊がある。\n語録を読む。",
+    "expected": []
+  },
+  {
+    "id": "foreign-field-term/verb-forms",
+    "text": "語る。語った。語り、語れば、語ろう。",
+    "expected": []
+  },
+  {
+    "id": "foreign-field-term/quoted-and-code",
+    "text": "「語」を単体で使わない。\n`語`を単体で使わない。",
+    "expected": []
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "request-in-condition/problem",
+    "text": "ヒントが必要なら補助機能を呼んでもらえれば用意する。",
+    "expected": [
+      {
+        "ruleId": "request-in-condition",
+        "match": "でもらえれば"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を呼んで"
+      }
+    ]
+  },
+  {
+    "id": "request-in-condition/problem-writer-investigates",
+    "text": "エラーの全文を貼ってくれれば原因を調べる。",
+    "expected": [
+      {
+        "ruleId": "request-in-condition",
+        "match": "てくれれば"
+      }
+    ]
+  },
+  {
+    "id": "request-in-condition/problem-forms",
+    "text": "設定を送ってもらえたら反映する。\nログを貼ってくれたら確認する。\n手順を書いていただければ試す。\n画面を見せていただけたら直す。",
+    "expected": [
+      {
+        "ruleId": "request-in-condition",
+        "match": "てもらえたら"
+      },
+      {
+        "ruleId": "request-in-condition",
+        "match": "てくれたら"
+      },
+      {
+        "ruleId": "request-in-condition",
+        "match": "ていただければ"
+      },
+      {
+        "ruleId": "request-in-condition",
+        "match": "ていただけたら"
+      }
+    ]
+  },
+  {
+    "id": "request-in-condition/normal-subject-markers",
+    "text": "設定してもらえれば、CI が通る。\n読んでもらえれば、理由は分かる。",
+    "expected": []
+  },
+  {
+    "id": "request-in-condition/normal-closings",
+    "text": "見てもらえればありがたい。\n直してもらえれば有り難い。\n教えてくれたらうれしい。\nレビューしてもらえれば嬉しい。",
+    "expected": []
+  },
+  {
+    "id": "request-in-condition/normal-other-subject",
+    "text": "高校生に使ってもらえれば、大学生にも広がる。",
+    "expected": []
+  },
+  {
+    "id": "request-in-condition/normal-copula",
+    "text": "当てはまるものだけ埋めていただければ大丈夫です。",
+    "expected": []
+  },
+  {
+    "id": "request-in-condition/normal-request-idiom",
+    "text": "あわせて読んでいただければと思います。",
+    "expected": []
+  },
+  {
+    "id": "request-in-condition/normal-request-in-main-clause",
+    "text": "ヒントが必要なら補助機能を実行してほしい。",
+    "expected": []
+  },
+  {
+    "id": "request-in-condition/normal-polite-closing",
+    "text": "レビューしてもらえれば助かります。",
+    "expected": []
+  },
+  {
+    "id": "request-in-condition/normal-humble-closing",
+    "text": "確認していただければ幸いです。",
+    "expected": []
+  }
+]

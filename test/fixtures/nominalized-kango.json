@@ -1,0 +1,281 @@
+[
+  {
+    "id": "nominalized-kango/problem",
+    "text": "不一致を 403 で返すと resultId が実在することが漏れるため、設計書では不存在と同じ 404 に寄せている。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "不存在"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/normal",
+    "text": "不一致を 403 で返すと resultId が実在することが漏れるため、設計書ではリソースが存在しない場合と同じ 404 に寄せている。",
+    "expected": []
+  },
+  {
+    "id": "nominalized-kango/problem-missing",
+    "text": "summary未存在時の挙動を明文化する。\nキャンペーン未存在なら404を返す。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "未存在"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "未存在"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/normal-missing",
+    "text": "summaryが存在しないときの挙動を明文化する。\n`未存在` という状態値を定義する。",
+    "expected": []
+  },
+  {
+    "id": "nominalized-kango/problem-owner",
+    "text": "所有者不一致では404を返す。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "所有者不一致"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/normal-owner",
+    "text": "キャンペーンと所有者不一致は404の条件です。\nテストに所有者不一致というケースを追加する。\n値の所有者が一致しない場合は404を返す。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "所有者不一致"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/problem-pending",
+    "text": "検証の未実施を理由に公開を止める。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "未実施"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/normal-pending",
+    "text": "検証は未実施です。\n未実施事項を一覧にまとめる。\n検証していないため公開を止める。",
+    "expected": []
+  },
+  {
+    "id": "nominalized-kango/mixed-label-and-clause",
+    "text": "キャンペーンと所有者不一致は404、所有者不一致では警告を出す。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "所有者不一致"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "所有者不一致"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/problem-compound-nouns",
+    "text": "問題確定の下限を正確な問題総数として使わない。\n検索53箇所に問題用法は確認できなかった。\n引用された悪い例は問題件数から除いた。\n以下の例は判定境界を示す作例です。\n出現合計は21件です。\n# 検出語の拡張候補（実装前の調査）",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "問題確定"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "問題用法"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "問題件数"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "判定境界"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "出現合計"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "検出語"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/normal-compound-nouns",
+    "text": "問題と確定した件数の下限を記録する。\n問題のある用法を確認する。\n問題がある文の件数を数える。\n判定の境目を示す作例を追加する。\n単語が出現した件数の合計を表に載せる。\n検出する単語の候補を確認する。\n問題点と確認事項、問題箇所、修正記録を整理する。",
+    "expected": []
+  },
+  {
+    "id": "nominalized-kango/compound-with-kanji-neighbors",
+    "text": "問題確定数を数える。\n検出語一覧を更新する。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "問題確定"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "検出語"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/compound-terms-a",
+    "text": "実装都合の問題だった。\n対象限定のchezmoi verifyを実行した。\n修正依頼文案を読んだ。\n仕様判断と変更箇所の対応を追う。\n条件描画も既存のパターンと一致した。\n仕様明文化をコミットした。\n修正必須な変更を行った。\n仕様手戻りを避ける。\n原因到達までに測定を4回繰り返した。\n判定一本化を方針に含めた。\n確認検索はPlansに絞る。\n修正往復が減る。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "実装都合"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "対象限定"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "修正依頼文案"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "仕様判断"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "条件描画"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "仕様明文化"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "修正必須"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "仕様手戻り"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "原因到達"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "判定一本化"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "確認検索"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "修正往復"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/compound-terms-b",
+    "text": "実装技術は固定しない。\n仕様保証がない。\n実装移設を行う。\n仕様書追加コミットを確認する。\n対象外購入レコードは作らない。\nカード出現演出の同期を調べる。\n候補昇格を検討する。\n修正案反映を確認する。\n仕様把握を進める。\nリンク修正義務がある。\nルートは実装共有ではない。\n実装承認の境界を保つ。\n仕様の実装追従を進める。",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "実装技術"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "仕様保証"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "実装移設"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "仕様書追加"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "対象外購入"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "出現演出"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "候補昇格"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "修正案反映"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "仕様把握"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "修正義務"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "実装共有"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "実装承認"
+      },
+      {
+        "ruleId": "nominalized-kango",
+        "match": "実装追従"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/heading-compound",
+    "text": "## 実装戦略確定",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "実装戦略確定"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/label-compound",
+    "text": "**結果**: 問題継続",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "問題継続"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/table-compound",
+    "text": "| 区分 | 内容 |\n| --- | --- |\n| `実装責務` | 実装責務一覧 |",
+    "expected": [
+      {
+        "ruleId": "nominalized-kango",
+        "match": "実装責務"
+      }
+    ]
+  },
+  {
+    "id": "nominalized-kango/accepted-compounds",
+    "text": "実装依存の項目を挙げる。\nDB実装依存の文字コード指定を見直す。\n実装依存情報を記録する。\n次の問題を修正対応しました。\nバグ修正対応の履歴を調べる。\n実装上の都合と、仕様の手戻りについて話す。",
+    "expected": []
+  }
+]

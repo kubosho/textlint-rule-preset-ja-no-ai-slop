@@ -1,0 +1,253 @@
+[
+  {
+    "id": "physical-verb-for-abstract/problem-rise",
+    "text": "比喩が読み手の側で立ち上がってしまう。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "比喩が読み手の側で立ち上が"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-abstract-subjects",
+    "text": "意味が文脈の中で立ち上がる。\nイメージが立ち上がる。\n概念が立ち上がる。\n物語が立ち上がる。\n文脈が立ち上がる。\n印象が立ち上がる。\n感覚が立ち上がる。\n輪郭が立ち上がる。\n問いが立ち上がる。\n論点は議論の中で立ち上がる。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "意味が文脈の中で立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "イメージが立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "概念が立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "物語が立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "文脈が立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "印象が立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "感覚が立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "輪郭が立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "問いが立ち上が"
+      },
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "論点は議論の中で立ち上が"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-limitation",
+    "text": "技術的な限定が落ちる。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "限定が落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-server",
+    "text": "サーバーが立ち上がるまで待つ。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-environment",
+    "text": "開発環境が立ち上がったらブラウザで開く。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-nuance",
+    "text": "業務上のニュアンスが落ちる。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "ニュアンスが落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-decision",
+    "text": "再開判断が落ちる。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "判断が落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-intent",
+    "text": "一方の意図が落ちる。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "意図が落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-reason",
+    "text": "品質基準の理由が落ちている。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "理由が落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-viewpoint",
+    "text": "定型化しにくい観点が落ちる。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "観点が落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-constraint",
+    "text": "正規表現の制約が変換で落ちても確認できない。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "制約が変換で落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-instruction",
+    "text": "修正で指示が落ちた。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "指示が落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-qualifying-instruction",
+    "text": "書き直しで落ちた指示を報告した。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "落ちた指示"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-condition",
+    "text": "書く側の条件は「判断について書く」に落ちた。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "条件は「判断について書く」に落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/problem-condition-variant",
+    "text": "確認の条件が一つに落ちる。",
+    "expected": [
+      {
+        "ruleId": "physical-verb-for-abstract",
+        "match": "条件が一つに落ち"
+      }
+    ]
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-effect",
+    "text": "効力が落ちる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-tempo",
+    "text": "テンポが落ちる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-information-loss",
+    "text": "非可逆圧縮では情報が落ちる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-floating",
+    "text": "実装の方法が浮かぶ。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-collapsing",
+    "text": "履歴の意味が崩れる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-running",
+    "text": "判定コードはブラウザで走る。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-test-failure",
+    "text": "テストが落ちる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-ci-failure",
+    "text": "CIが落ちる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-performance",
+    "text": "パフォーマンスが落ちる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-stomach",
+    "text": "腑に落ちる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-calm",
+    "text": "気持ちが落ち着く。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-ci-reason",
+    "text": "CIが落ちた理由を調べる。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-test-reason",
+    "text": "理由はテストが落ちたため。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-ci-subject-reason",
+    "text": "理由はCIが落ちたことだ。",
+    "expected": []
+  },
+  {
+    "id": "physical-verb-for-abstract/normal-idiom-with-subjects",
+    "text": "理由は腑に落ちる。\n条件は腑に落ちた。",
+    "expected": []
+  }
+]

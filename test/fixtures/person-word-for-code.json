@@ -1,0 +1,90 @@
+[
+  {
+    "id": "person-word-for-code/problem",
+    "text": "処理が返す `not_found` は誰が404へ変換しているか。",
+    "expected": [
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      }
+    ]
+  },
+  {
+    "id": "person-word-for-code/problem-actions-and-identifiers",
+    "text": "`exampleMethod` を誰から呼んでいるか。\nuser_id は誰が生成しているか。\nExampleType::method の結果は誰が検証しているか。\nexample() の例外は誰が捕捉しているか。\nExampleClient のレスポンスは誰が解析しているか。\nexampleMethod の入力は誰がパースしているか。\nconfig.yaml は誰が参照しているか。\nExampleError は誰が書き換えているか。\nio.EOF は誰が握りつぶしているか。\nexample.wrap で誰がラップしているか。\nexampleHandler の値は誰が返しているか。\nqueue_name のジョブは誰が処理しているか。\nExampleError は誰が投げているか。",
+    "expected": [
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰から"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      },
+      {
+        "ruleId": "person-word-for-code",
+        "match": "誰が"
+      }
+    ]
+  },
+  {
+    "id": "person-word-for-code/normal-no-identifier",
+    "text": "この問い合わせは誰が処理するか。",
+    "expected": []
+  },
+  {
+    "id": "person-word-for-code/normal",
+    "text": "処理が返す `not_found` は、コード上のどの部分で404へ変換しているか。",
+    "expected": []
+  },
+  {
+    "id": "person-word-for-code/normal-person",
+    "text": "このリリースは誰が承認したか。",
+    "expected": []
+  },
+  {
+    "id": "person-word-for-code/normal-person-with-code",
+    "text": "`main` ブランチに誰がマージしたか確認する。",
+    "expected": []
+  }
+]

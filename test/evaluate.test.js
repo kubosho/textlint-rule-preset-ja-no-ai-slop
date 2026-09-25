@@ -1,13 +1,17 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readdirSync } from "node:fs";
 import { describe, it } from "node:test";
 import preset from "../index.js";
 import { evaluate, format } from "../scripts/evaluate.js";
+import { cases } from "./fixtures.js";
 import { lint } from "./lint.js";
 
-const cases = JSON.parse(readFileSync(new URL("./cases.json", import.meta.url), "utf8"));
-
 describe("evaluation through textlint", () => {
+  it("fixture files exist for every rule and shared quotations", () => {
+    const files = readdirSync(new URL("./fixtures/", import.meta.url)).filter((name) => name.endsWith(".json"));
+    assert.deepEqual(files.sort(), [...Object.keys(preset.rules).map((id) => `${id}.json`), "quoted.json"].sort());
+  });
+
   it("registers every rule with expected findings in the shipped cases", () => {
     const expectedIds = new Set(cases.flatMap((testCase) => testCase.expected.map((finding) => finding.ruleId)));
     assert.deepEqual(Object.keys(preset.rules).sort(), [...expectedIds].sort());

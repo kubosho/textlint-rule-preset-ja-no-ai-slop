@@ -1,0 +1,130 @@
+[
+  {
+    "id": "unspecified-behavior/missing-information",
+    "text": "抽出できない形では、誤った差分を出すより無言で降りるほうが安全。",
+    "expected": [
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "無言で降り"
+      }
+    ]
+  },
+  {
+    "id": "unspecified-behavior/problem-silently-return",
+    "text": "重複した申し込みには黙って既存結果を返す。",
+    "expected": [
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って既存結果を返"
+      }
+    ]
+  },
+  {
+    "id": "unspecified-behavior/problem-behaviors",
+    "text": "エラー時は無言で終了する。\nループを黙って終わらせる。\n処理を静かに抜ける。\nテストが黙って落ちる。\n例外を握って黙って戻る。\n不正な行は無言でスキップする。\nエラーを黙って握りつぶす。\nキューが無言で進む。\n検証が黙って通る。\nイベントを静かに処理する。\nコマンドを無言で実行する。\nリトライが黙って成功する。\nキャッシュが無言で壊れる。\n失敗時は無言で exit する。\n空配列なら黙って return する。\n表示上の日時が黙って動く。\n設定が黙って無視される。\n行が黙って捨てられる。",
+    "expected": [
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "無言で終了"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って終わ"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "静かに抜け"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って落ち"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って戻"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "無言でスキップ"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って握りつぶ"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "無言で進"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って通"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "静かに処理"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "無言で実行"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って成功"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "無言で壊れ"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "無言で exit"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って return"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って動"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って無視"
+      },
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "黙って捨て"
+      }
+    ]
+  },
+  {
+    "id": "unspecified-behavior/normal-person",
+    "text": "レビュアーが黙って修正した。",
+    "expected": []
+  },
+  {
+    "id": "unspecified-behavior/normal-become-quiet",
+    "text": "会議が静かになると落ち着かなくなる。",
+    "expected": []
+  },
+  {
+    "id": "unspecified-behavior/problem-silently-fail",
+    "text": "設定ファイルがなければ静かに失敗する。",
+    "expected": [
+      {
+        "ruleId": "unspecified-behavior",
+        "match": "静かに失敗"
+      }
+    ]
+  },
+  {
+    "id": "unspecified-behavior/normal-specified",
+    "text": "抽出できない形では、注入せずに exit 0 する。",
+    "expected": []
+  },
+  {
+    "id": "unspecified-behavior/normal-approval",
+    "text": "申請の許可が降りたら作業を始める。",
+    "expected": []
+  }
+]

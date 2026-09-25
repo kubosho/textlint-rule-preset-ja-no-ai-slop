@@ -1,0 +1,233 @@
+[
+  {
+    "id": "literal-verb-translation/problem",
+    "text": "2つに割ることで落ちます。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "割る"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/problem-forms",
+    "text": "PR を2つに割った。\n変更を割って出す。\nコミットを割ります。\nコミットを割りました。\n差分が大きければ割れば良い。\n差分を割ろう。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "割った"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "割って"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "割ります"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "割りました"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "割れば"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "割ろう"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/normal-role",
+    "text": "レビュアーの役割って何かを決める。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/normal-split",
+    "text": "コミットを2つに分割する。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/normal-established-verbs",
+    "text": "CI が落ちたので Issue を閉じる。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/normal-division",
+    "text": "合計を件数で割ると平均になる。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/normal-assign",
+    "text": "各タスクに担当者を割り当てる。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/normal-arithmetic",
+    "text": "100 を先に掛けてから割った。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/problem-place",
+    "text": "検証の入口をここに置く。\n設定をここに置いた。\n検証案を置きます。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "をここに置く"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "をここに置いた"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を置きます"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/normal-place",
+    "text": "`features/genres` 以下にusecaseやrepositoryを置く。\nトラップを置く。\n距離を置く。\n設定を置き換える。\n情報の位置を確認してから設置する。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/problem-call",
+    "text": "READMEを呼ぶ。\nREADMEを呼んだ。\nREADMEを呼びます。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を呼ぶ"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を呼んだ"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を呼びます"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/normal-call",
+    "text": "画面からAPIを呼ぶ。\n上位ランナーがどれを呼ぶか選ぶ。\n関数を呼び出す。\nこの処理を「実行」と呼ぶ。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を呼ぶ"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/problem-align",
+    "text": "baseline生成をCIに寄せる。\n処理をCIへ寄せました。\n方針を別の案に寄せて進める。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "に寄せる"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "へ寄せました"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "に寄せて"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/normal-align",
+    "text": "スタイル定義をCSS側に寄せる。\n応答を404に寄せる。\nbaselineの生成環境をCIに寄せる。\n変更を一つのコミットに寄せる。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "に寄せる"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "に寄せる"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "に寄せる"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/problem-connect",
+    "text": "handlerをusecaseへ繋いだ。\n処理を別の層へ繋ぐ。\n機能を次の画面へ繋ぎます。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "繋いだ"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "繋ぐ"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "繋ぎます"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/normal-connect",
+    "text": "ネットワークに繋ぐ。\nDBを繋ぐ。\n文字列を繋ぐ。\nAPIを叩く。ログを吐く。\nテストが落ちる。Issueを閉じる。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/problem-polite-negatives",
+    "text": "検証案を置きません。\nREADMEを呼びません。\n変更をCIに寄せません。\nhandlerをusecaseへ繋ぎません。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を置きません"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を呼びません"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "に寄せません"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "繋ぎません"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/normal-inline-code-context",
+    "text": "`DB`に繋ぐ。\n`API`を呼ぶ。",
+    "expected": []
+  },
+  {
+    "id": "literal-verb-translation/mixed-place",
+    "text": "以下にusecaseを置くが、検証の入口を置く。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を置く"
+      }
+    ]
+  },
+  {
+    "id": "literal-verb-translation/previously-excluded-words",
+    "text": "hammerを呼ぶ。\n変更をPR側に寄せる。",
+    "expected": [
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "を呼ぶ"
+      },
+      {
+        "ruleId": "literal-verb-translation",
+        "match": "に寄せる"
+      }
+    ]
+  }
+]

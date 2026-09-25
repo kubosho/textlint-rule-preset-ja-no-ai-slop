@@ -1,0 +1,183 @@
+[
+  {
+    "id": "vague-evaluative-ending/problem-slash-command",
+    "text": "スラッシュコマンド化が効いた。",
+    "expected": [
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いた"
+      }
+    ]
+  },
+  {
+    "id": "vague-evaluative-ending/problem-separation",
+    "text": "処理の分離が効いた。",
+    "expected": [
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いた"
+      }
+    ]
+  },
+  {
+    "id": "vague-evaluative-ending/problem-construction",
+    "text": "特に効いたのは、処理の分離です。",
+    "expected": [
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いたのは"
+      }
+    ]
+  },
+  {
+    "id": "vague-evaluative-ending/problem-endings",
+    "text": "分離が効く。\n分離が効きます。\n分離が効きました。\n分離が効いている。\n分離が効いています。\n分離が効いていた。\n分離が効いていました。\n説明が刺さる。\n説明が刺さります。\n説明が刺さりました。\n説明が刺さった。\n説明が刺さっている。\n説明が刺さっています。\n説明が響く。\n説明が響きます。\n説明が響きました。\n説明が響いた。\n説明が響いている。\n説明が響いています。\n分離が効果的だ。\n分離が効果的です。\n分離が効果的だった。\n分離が効果的でした。\n分離が効いたね。\n分離が効くよ。",
+    "expected": [
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効く"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効きます"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効きました"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いている"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いています"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いていた"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いていました"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "刺さる"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "刺さります"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "刺さりました"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "刺さった"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "刺さっている"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "刺さっています"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "響く"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "響きます"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "響きました"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "響いた"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "響いている"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "響いています"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効果的だ"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効果的です"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効果的だった"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効果的でした"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いた"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効く"
+      }
+    ]
+  },
+  {
+    "id": "vague-evaluative-ending/problem-constructions",
+    "text": "ここで効くのが分離です。\n効いているのは分離です。\n刺さるのは短い説明だ。\n刺さったのが意外だった。\n響くのは具体例だ。\n響いたのが結論だ。",
+    "expected": [
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効くのが"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "効いているのは"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "刺さるのは"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "刺さったのが"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "響くのは"
+      },
+      {
+        "ruleId": "vague-evaluative-ending",
+        "match": "響いたのが"
+      }
+    ]
+  },
+  {
+    "id": "vague-evaluative-ending/normal-result-stated",
+    "text": "キャッシュが効き、2回目以降の応答時間が短くなった。",
+    "expected": []
+  },
+  {
+    "id": "vague-evaluative-ending/normal-rewritten",
+    "text": "スラッシュコマンド化によって起動条件が明示され、意図しないタイミングでの実行が減った。",
+    "expected": []
+  },
+  {
+    "id": "vague-evaluative-ending/normal-enabled",
+    "text": "この設定は有効です。",
+    "expected": []
+  }
+]

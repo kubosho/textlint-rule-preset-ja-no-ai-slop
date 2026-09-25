@@ -1,8 +1,6 @@
-import { readFileSync } from "node:fs";
 import preset from "../index.js";
+import { cases } from "../test/fixtures.js";
 import { lint } from "../test/lint.js";
-
-const cases = JSON.parse(readFileSync(new URL("../test/cases.json", import.meta.url), "utf8"));
 
 const ruleIds = Object.keys(preset.rules);
 

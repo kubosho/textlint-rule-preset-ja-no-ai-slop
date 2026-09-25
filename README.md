@@ -329,4 +329,4 @@ npm test
 npm run evaluate
 ```
 
-`test/cases.json`には文章と期待する指摘を組にした評価データがあります。`scripts/evaluate.js`は全件をtextlintで検査し、規則IDと指摘範囲の文字列を照合します。検出漏れか誤検出があれば終了コード1で終わります。
+`test/fixtures/`には規則ごとに、文章と期待する指摘を組にした評価データがあります。引用などの共通ケースは`quoted.json`に分けています。`scripts/evaluate.js`は全件をtextlintで検査し、規則IDと指摘範囲の文字列を照合します。検出漏れか誤検出があれば終了コード1で終わります。

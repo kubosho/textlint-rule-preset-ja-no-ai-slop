@@ -1,0 +1,32 @@
+[
+  {
+    "id": "quoted/brackets",
+    "text": "「過積載」「越権」などで文章や設計を評価すると、何が余分で何を直すべきかが分からなくなる。",
+    "expected": []
+  },
+  {
+    "id": "quoted/example-with-explanation",
+    "text": "- 「2つに割ることで落ちます」：何を割り、何が落ちるのか不明。",
+    "expected": []
+  },
+  {
+    "id": "quoted/rewrite-pair",
+    "text": "- 「処理の分離が効いた」→「分析処理を分離したことで責務が明確になり、変更時に確認すべき範囲を限定できた」",
+    "expected": []
+  },
+  {
+    "id": "quoted/inline-code",
+    "text": "`無言で降りる` のような表現を避ける。",
+    "expected": []
+  },
+  {
+    "id": "quoted/blockquote",
+    "text": "> ヒントが必要なら補助機能を呼んでもらえれば用意する。",
+    "expected": []
+  },
+  {
+    "id": "quoted/connection-example",
+    "text": "- **短文を「だから」でつなぐ**：「先行者有利の構造。だから今やる。」",
+    "expected": []
+  }
+]
