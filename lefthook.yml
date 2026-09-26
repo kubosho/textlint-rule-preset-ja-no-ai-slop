@@ -1,0 +1,3 @@
+commit-msg:
+  jobs:
+    - run: npx --no-install commitlint --edit {1}

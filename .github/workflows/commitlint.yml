@@ -1,0 +1,39 @@
+name: Commitlint
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Lint commits
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          if [ "$EVENT_NAME" = pull_request ]; then
+            npx --no-install commitlint --from "$BASE_SHA" --to "$HEAD_SHA" --verbose
+          elif git cat-file -e "$BEFORE_SHA^{commit}" 2>/dev/null; then
+            npx --no-install commitlint --from "$BEFORE_SHA" --to HEAD --verbose
+          else
+            for sha in $(git rev-list --reverse HEAD); do
+              git log -1 --format=%B "$sha" | npx --no-install commitlint --verbose
+            done
+          fi
