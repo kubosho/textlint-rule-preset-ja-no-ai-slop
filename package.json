@@ -9,6 +9,7 @@
   "keywords": ["textlint", "textlintrule", "japanese"],
   "license": "MIT",
   "type": "module",
+  "packageManager": "pnpm@12.5.1",
   "main": "index.js",
   "files": [
     "index.js",

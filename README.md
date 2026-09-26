@@ -5,7 +5,7 @@
 ## 使い方
 
 ```sh
-npm install --save-dev textlint textlint-rule-preset-ja-no-ai-slop
+pnpm add -D textlint textlint-rule-preset-ja-no-ai-slop
 ```
 
 `.textlintrc.json`に設定します。
@@ -19,7 +19,7 @@ npm install --save-dev textlint textlint-rule-preset-ja-no-ai-slop
 ```
 
 ```sh
-npx textlint article.md
+pnpm exec textlint article.md
 ```
 
 指摘の規則IDは`ja-no-ai-slop/unspecified-behavior`のようにプリセット名を含みます。修正に必要な情報が文章から特定できない場合、その値を推測せずに確かめるための注意をメッセージに含めています。
@@ -325,8 +325,8 @@ frontmatter、コードブロック、インラインコード、HTMLコメン�
 ## 開発
 
 ```sh
-npm test
-npm run evaluate
+pnpm test
+pnpm run evaluate
 ```
 
 `test/fixtures/`には規則ごとに、文章と期待する指摘を組にした評価データがあります。引用などの共通ケースは`quoted.json`に分けています。`scripts/evaluate.js`は全件をtextlintで検査し、規則IDと指摘範囲の文字列を照合します。検出漏れか誤検出があれば終了コード1で終わります。

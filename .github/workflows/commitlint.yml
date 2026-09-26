@@ -16,11 +16,12 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+      - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version: '24'
-          cache: npm
-      - run: npm ci --ignore-scripts
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile --ignore-scripts
       - name: Lint commits
         env:
           EVENT_NAME: ${{ github.event_name }}
@@ -29,11 +30,11 @@ jobs:
           BEFORE_SHA: ${{ github.event.before }}
         run: |
           if [ "$EVENT_NAME" = pull_request ]; then
-            npx --no-install commitlint --from "$BASE_SHA" --to "$HEAD_SHA" --verbose
+            pnpm exec commitlint --from "$BASE_SHA" --to "$HEAD_SHA" --verbose
           elif git cat-file -e "$BEFORE_SHA^{commit}" 2>/dev/null; then
-            npx --no-install commitlint --from "$BEFORE_SHA" --to HEAD --verbose
+            pnpm exec commitlint --from "$BEFORE_SHA" --to HEAD --verbose
           else
             for sha in $(git rev-list --reverse HEAD); do
-              git log -1 --format=%B "$sha" | npx --no-install commitlint --verbose
+              git log -1 --format=%B "$sha" | pnpm exec commitlint --verbose
             done
           fi
