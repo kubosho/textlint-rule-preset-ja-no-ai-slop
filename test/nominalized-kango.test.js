@@ -7,7 +7,7 @@ it("問題用法 explains the omitted particle and a phrase with its relation", 
   assert.equal(messages.length, 1);
   assert.match(messages[0].message, /助詞を省いて/);
   assert.match(messages[0].message, /問題のある用法/);
-  assert.match(messages[0].message, /文脈によっては問題ない/);
+  assert.match(messages[0].message, /文脈によっては問題ありません/);
   assert.match(messages[0].message, /何と何の関係/);
 });
 
@@ -19,7 +19,7 @@ for (const [name, text, detail] of [
   it(name, async () => {
     const messages = (await lint(text)).messages.filter(({ ruleId }) => ruleId === "nominalized-kango");
     assert.equal(messages.length, 1, text);
-    assert.match(messages[0].message, /文脈によっては問題ない/);
+    assert.match(messages[0].message, /文脈によっては問題ありません/);
     assert.ok(messages[0].message.includes(detail), `${text}: ${messages[0].message}`);
   });
 }

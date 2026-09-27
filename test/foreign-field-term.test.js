@@ -17,9 +17,9 @@ it("field terms explain their intended meaning and ask for context", async () =>
   for (const [text, correction] of examples) {
     const { messages } = await lint(text);
     assert.equal(messages.length, 1, text);
-    assert.match(messages[0].message, /読み手にその分野での意味を考えさせる/);
+    assert.match(messages[0].message, /読み手にその分野での意味を考えさせます/);
     assert.ok(messages[0].message.includes(correction), text);
-    assert.match(messages[0].message, /問題ない場合もある。何を指す言葉か/);
+    assert.match(messages[0].message, /問題ない場合もあります。何を指す言葉か/);
   }
 });
 

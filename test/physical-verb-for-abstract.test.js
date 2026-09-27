@@ -12,8 +12,8 @@ it("abstract motion messages explain the ambiguity and the specific rewrite", as
   for (const [text, correction] of examples) {
     const { messages } = await lint(text);
     assert.equal(messages.length, 1, text);
-    assert.match(messages[0].message, /何が起きたかが一意に決まらない/);
+    assert.match(messages[0].message, /何が起きたかが一意に決まりません/);
     assert.ok(messages[0].message.includes(correction), text);
-    assert.match(messages[0].message, /問題ない場合もある/);
+    assert.match(messages[0].message, /問題ない場合もあります/);
   }
 });
