@@ -65,4 +65,4 @@ jobs:
         env:
           RELEASE_VERSION: ${{ needs.release.outputs.version }}
         run: test "$(node -p "require('./package.json').version")" = "$RELEASE_VERSION"
-      - run: npm publish --access public
+      - run: npm stage publish --access public
