@@ -11,7 +11,7 @@ for (const [name, text, detail] of [
   it(name, async () => {
     const messages = (await lint(text)).messages.filter(({ ruleId }) => ruleId === "literal-verb-translation");
     assert.equal(messages.length, 1, text);
-    assert.match(messages[0].message, /文脈によっては問題ない/);
+    assert.match(messages[0].message, /文脈によっては問題ありません/);
     assert.ok(messages[0].message.includes(detail), `${text}: ${messages[0].message}`);
   });
 }
