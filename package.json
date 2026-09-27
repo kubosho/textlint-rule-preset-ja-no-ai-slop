@@ -1,6 +1,6 @@
 {
   "name": "textlint-rule-preset-ja-no-ai-slop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "textlint preset for unnatural Japanese phrasing",
   "repository": {
     "type": "git",

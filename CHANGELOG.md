@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/kubosho/textlint-rule-preset-ja-no-ai-slop/compare/v0.1.1...v0.1.2) (2026-09-27)
+
+
+### Bug Fixes
+
+* **ci:** stage npm releases for manual approval ([4367957](https://github.com/kubosho/textlint-rule-preset-ja-no-ai-slop/commit/4367957306193cb55eb573e9e433f0486229da9a))
+
 ## [0.1.1](https://github.com/kubosho/textlint-rule-preset-ja-no-ai-slop/compare/v0.1.0...v0.1.1) (2026-09-27)
 
 
