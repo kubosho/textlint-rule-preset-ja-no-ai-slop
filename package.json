@@ -31,5 +31,8 @@
     "@textlint/textlint-plugin-text": "15.8.0",
     "lefthook": "2.1.15",
     "textlint": "15.8.0"
+  },
+  "dependencies": {
+    "kuromojin": "3.0.1"
   }
 }

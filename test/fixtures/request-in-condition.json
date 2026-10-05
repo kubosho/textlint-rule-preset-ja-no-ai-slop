@@ -9,7 +9,7 @@
       },
       {
         "ruleId": "literal-verb-translation",
-        "match": "を呼んで"
+        "match": "呼んで"
       }
     ]
   },
