@@ -28,10 +28,10 @@ describe("excluded text through textlint", () => {
     ]);
   });
 
-  it("reports 黙って返 and 無言で終了 outside a quote and code block", async () => {
+  it("reports 黙って返す and 無言で終了 outside a quote and code block", async () => {
     const text = "「無言で終了する。」の後に黙って返す。\n```\n黙って返す。\n```\n無言で終了する。";
     assert.deepEqual(findings(await lint(text), text), [
-      { ruleId: "unspecified-behavior", match: "黙って返" },
+      { ruleId: "unspecified-behavior", match: "黙って返す" },
       { ruleId: "unspecified-behavior", match: "無言で終了" },
     ]);
   });

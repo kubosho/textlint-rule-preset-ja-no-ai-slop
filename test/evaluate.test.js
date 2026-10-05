@@ -58,7 +58,7 @@ describe("evaluation through textlint", () => {
   it("identifies an unexpected span even when the case has no expected findings", async () => {
     const [result] = await evaluate([{ id: "unexpected", text: "黙って返す。", expected: [] }]);
     assert.deepEqual(result.unexpected, [
-      { ruleId: "unspecified-behavior", match: "黙って返" },
+      { ruleId: "unspecified-behavior", match: "黙って返す" },
     ]);
   });
 
@@ -74,18 +74,18 @@ describe("evaluation through textlint", () => {
     const output = format(input, await evaluate(input));
     assert.match(output, /unspecified-behavior：期待 1、検出漏れ 1、誤検出 1/);
     assert.match(output, /検出漏れ\n  missing：unspecified-behavior「無言で終了」/);
-    assert.match(output, /誤検出\n  unexpected：unspecified-behavior「黙って返」/);
+    assert.match(output, /誤検出\n  unexpected：unspecified-behavior「黙って返す」/);
   });
 
   it("counts repeated identical spans separately", async () => {
     const [result] = await evaluate([{
       id: "duplicate",
       text: "黙って返す。黙って返す。",
-      expected: [{ ruleId: "unspecified-behavior", match: "黙って返" }],
+      expected: [{ ruleId: "unspecified-behavior", match: "黙って返す" }],
     }]);
     assert.deepEqual(result.missed, []);
     assert.deepEqual(result.unexpected, [
-      { ruleId: "unspecified-behavior", match: "黙って返" },
+      { ruleId: "unspecified-behavior", match: "黙って返す" },
     ]);
   });
 });
