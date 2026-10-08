@@ -5,7 +5,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "比喩が読み手の側で立ち上が"
+        "match": "比喩が読み手の側で立ち上がって"
       }
     ]
   },
@@ -15,43 +15,43 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "意味が文脈の中で立ち上が"
+        "match": "意味が文脈の中で立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "イメージが立ち上が"
+        "match": "イメージが立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "概念が立ち上が"
+        "match": "概念が立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "物語が立ち上が"
+        "match": "物語が立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "文脈が立ち上が"
+        "match": "文脈が立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "印象が立ち上が"
+        "match": "印象が立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "感覚が立ち上が"
+        "match": "感覚が立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "輪郭が立ち上が"
+        "match": "輪郭が立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "問いが立ち上が"
+        "match": "問いが立ち上がる"
       },
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "論点は議論の中で立ち上が"
+        "match": "論点は議論の中で立ち上がる"
       }
     ]
   },
@@ -61,7 +61,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "限定が落ち"
+        "match": "限定が落ちる"
       }
     ]
   },
@@ -81,7 +81,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "ニュアンスが落ち"
+        "match": "ニュアンスが落ちる"
       }
     ]
   },
@@ -91,7 +91,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "判断が落ち"
+        "match": "判断が落ちる"
       }
     ]
   },
@@ -101,7 +101,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "意図が落ち"
+        "match": "意図が落ちる"
       }
     ]
   },
@@ -111,7 +111,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "理由が落ち"
+        "match": "理由が落ちて"
       }
     ]
   },
@@ -121,7 +121,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "観点が落ち"
+        "match": "観点が落ちる"
       }
     ]
   },
@@ -131,7 +131,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "制約が変換で落ち"
+        "match": "制約が変換で落ちて"
       }
     ]
   },
@@ -141,7 +141,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "指示が落ち"
+        "match": "指示が落ちた"
       }
     ]
   },
@@ -161,7 +161,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "条件は「判断について書く」に落ち"
+        "match": "条件は「判断について書く」に落ちた"
       }
     ]
   },
@@ -171,7 +171,7 @@
     "expected": [
       {
         "ruleId": "physical-verb-for-abstract",
-        "match": "条件が一つに落ち"
+        "match": "条件が一つに落ちる"
       }
     ]
   },

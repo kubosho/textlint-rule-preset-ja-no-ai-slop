@@ -5,7 +5,7 @@
     "expected": [
       {
         "ruleId": "unspecified-behavior",
-        "match": "無言で降り"
+        "match": "無言で降りる"
       }
     ]
   },
@@ -15,7 +15,7 @@
     "expected": [
       {
         "ruleId": "unspecified-behavior",
-        "match": "黙って既存結果を返"
+        "match": "黙って既存結果を返す"
       }
     ]
   },
@@ -29,19 +29,19 @@
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "黙って終わ"
+        "match": "黙って終わらせる"
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "静かに抜け"
+        "match": "静かに抜ける"
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "黙って落ち"
+        "match": "黙って落ちる"
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "黙って戻"
+        "match": "黙って戻る"
       },
       {
         "ruleId": "unspecified-behavior",
@@ -49,15 +49,15 @@
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "黙って握りつぶ"
+        "match": "黙って握りつぶす"
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "無言で進"
+        "match": "無言で進む"
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "黙って通"
+        "match": "黙って通る"
       },
       {
         "ruleId": "unspecified-behavior",
@@ -73,7 +73,7 @@
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "無言で壊れ"
+        "match": "無言で壊れる"
       },
       {
         "ruleId": "unspecified-behavior",
@@ -85,7 +85,7 @@
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "黙って動"
+        "match": "黙って動く"
       },
       {
         "ruleId": "unspecified-behavior",
@@ -93,7 +93,7 @@
       },
       {
         "ruleId": "unspecified-behavior",
-        "match": "黙って捨て"
+        "match": "黙って捨てられる"
       }
     ]
   },

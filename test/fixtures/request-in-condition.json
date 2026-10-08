@@ -5,11 +5,11 @@
     "expected": [
       {
         "ruleId": "request-in-condition",
-        "match": "でもらえれば"
+        "match": "呼んでもらえれば"
       },
       {
         "ruleId": "literal-verb-translation",
-        "match": "を呼んで"
+        "match": "呼んで"
       }
     ]
   },
@@ -19,7 +19,7 @@
     "expected": [
       {
         "ruleId": "request-in-condition",
-        "match": "てくれれば"
+        "match": "貼ってくれれば"
       }
     ]
   },
@@ -29,19 +29,29 @@
     "expected": [
       {
         "ruleId": "request-in-condition",
-        "match": "てもらえたら"
+        "match": "送ってもらえたら"
       },
       {
         "ruleId": "request-in-condition",
-        "match": "てくれたら"
+        "match": "貼ってくれたら"
       },
       {
         "ruleId": "request-in-condition",
-        "match": "ていただければ"
+        "match": "書いていただければ"
       },
       {
         "ruleId": "request-in-condition",
-        "match": "ていただけたら"
+        "match": "見せていただけたら"
+      }
+    ]
+  },
+  {
+    "id": "request-in-condition/problem-causative",
+    "text": "画面を見させてもらえれば直す。",
+    "expected": [
+      {
+        "ruleId": "request-in-condition",
+        "match": "見させてもらえれば"
       }
     ]
   },

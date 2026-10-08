@@ -8,5 +8,5 @@ it("効いた reports a message requesting the changed subject and observed resu
   assert.deepEqual(result.messages.map(({ ruleId, range }) => ({ ruleId, match: text.slice(...range) })), [
     { ruleId: "vague-evaluative-ending", match: "効いた" },
   ]);
-  assert.match(result.messages[0].message, /変化した対象と観察された結果/);
+  assert.match(result.messages[0].message, /変化した対象、観察された結果を書いてください/);
 });
