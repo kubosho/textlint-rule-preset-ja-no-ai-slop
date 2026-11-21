@@ -28,7 +28,7 @@
     "@commitlint/config-conventional": "21.2.3",
     "@textlint/kernel": "15.8.0",
     "@textlint/textlint-plugin-markdown": "15.8.0",
-    "@textlint/textlint-plugin-text": "15.8.0",
+    "@textlint/textlint-plugin-text": "16.1.1",
     "lefthook": "2.1.15",
     "textlint": "15.8.0"
   },
